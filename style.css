@@ -10,7 +10,6 @@ html{
   scroll-behavior:smooth;
 }
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #000;
@@ -204,22 +203,21 @@ body {
 }
 
 .hero-video {
-  width: 100%;
   height: auto;
-  position: fixed;
+  width: 44vw;
+  color: #ffff00;
   background-repeat: no-repeat;
-  background-size: contain;
-  justify-content: center;
-  align-items: center;
-  background-position: bottom center;
-  overflow: hidden;
-  padding: 120px;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  border: 3px solid yellow;
+  border-radius: 20px;
 }
 
 .experience {
   background-color: #000;
   width: 100%;
-  height: 50vh;
+  height: 65vh;
   display: flex;
   justify-content: start;
   padding: 0 80px;
@@ -310,33 +308,37 @@ body {
 .philosophy {
   display: flex;
   flex-direction: row;
-  height: 30vw;
+  justify-content: space-between;
+  height: 28vw;
   margin: 0 auto;
 }
 
 .philosophy-content {
-  background-color: beige;
+  background-image: linear-gradient(to right,black, yellow);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   color: #222;
-  margin: 0 auto;
+  width: 46vw;
+  margin: 20px;
+  border: 3px solid yellow;
+  border-radius: 30px;
 }
 
 .philosophy-content h1 {
-  font-size: 250%;
+  font-size: 220%;
   font-weight: bolder;
   margin: 20px 55px; 
-  color: #555;
+  color: #fff;
 }
 
 
 .philosophy-content p {
-  font-size: 100%;
+  font-size: 85%;
   font-weight: bold;
   margin: 20px 55px; 
-  color: #222;
+  color: #fff;
 }
 
 
@@ -461,7 +463,8 @@ projects-header p {
   width: calc(100% - 62%);
   height: auto;
   padding: 10px; /* Add padding for spacing */
-  border: 1px solid yellow;
+  border: 3px solid yellow;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -495,6 +498,8 @@ project-content-img {
   width: 100%;
   top:0;
   z-index: 1;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .project-content:nth-child(odd){
@@ -523,26 +528,27 @@ project-content-img {
   font-size: 30px;
   opacity: 0;
   transform: translate(60%,200%);
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   text-decoration: none;
+  border-top-left-radius: 10px;
 }
 
 .project-content:hover .popup-button {
   display: block;
   opacity: 1;
   transform: translate(0%,0%);
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-content:not(:hover) .popup-button {
   display: block;
   opacity: 1;
   transform: translate(60%,200%);
-  transition: transform 0.6s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .project-content:hover h2 {
-  transition: transform 0.8s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .amplifon-button {
@@ -584,7 +590,7 @@ project-content-img {
 }
 
 .digital-boite-project-background {
-  height: 30vw;
+  height: 20vw;
   background-image: url('./img/digital-boite-content-2.jpeg');
 }
 
@@ -597,7 +603,7 @@ project-content-img {
   display: grid;
   grid-template-columns: calc(50%) auto;
   height: 70vh;
-  margin: 150px auto;
+  margin: 150px 20px;
 }
 
 .instagram-content {
@@ -613,6 +619,8 @@ project-content-img {
   color: #222;
   margin: 0 auto;
   overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
 }
 
 .instagram-content h1 {
@@ -633,6 +641,9 @@ instagram-photo {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin: 20px;
+  border: 3px solid yellow;
+  border-radius: 10px;
 }
 
 .insta-button {
@@ -678,9 +689,9 @@ instagram-photo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5% 6%;
+  padding: 5% 2%;
   width: 100%;
-  height: 90vw;
+  height: 65vw;
   overflow: hidden;
 }
 
@@ -692,7 +703,7 @@ instagram-photo {
   text-align: start;
   top: 0;
   left: 0;
-  width: 60%;
+  width: 42%;
   height: auto;
   color: #fff; 
   padding: 5% 6%;
@@ -710,6 +721,7 @@ instagram-photo {
   letter-spacing: 1.5px;
   font-size: 100%;
   color: #555;
+  padding: 5px 0;
 }
 
 .testimony-second-part {
@@ -718,9 +730,10 @@ instagram-photo {
   flex-direction: column;
   top: 0;
   right: 0;
-  width: 50%;
-  height: 70vw;
-  padding: 5% 6%;
+  width: 52%;
+  height: 60vw;
+  padding: 5% 7%;
+  margin: 3%;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -737,21 +750,13 @@ instagram-photo {
   padding:20px;
   margin: 60px;
   color: #fff;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
+  border-radius: 10px;
   opacity: 1;
   transition: opacity 0.5s;
 
 }
 
-testimony-photo {
-  position: relative;
-  background: url('./img/content-2.png') no-repeat center center;
-  background-size: cover;
-  height: 100vw;
-  width: 70%;
-  z-index: 1;
-  border-radius: 50%;
-}
 
 .testimony-second-part-content h2,
 .testimony-second-part-content h3 {
@@ -919,6 +924,7 @@ input[type=text],input[type=email],select, textarea {
   height: auto;
   margin-top: 6px; 
   margin-bottom: 16px;
+  border-radius: 5px;
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
@@ -944,7 +950,7 @@ input[type=submit]:focus {
 
 input[type=text]:focus,input[type=email]:focus, select:focus, textarea:focus {
   outline: none;
-  border: none;
+  border: 2px solid yellow;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -1421,28 +1427,46 @@ input[type=submit]:not(:hover){
 .philosophy {
   flex-direction: column;
   width: 100%;
-  height: 120vw;
+  height: 105vw;
+  margin: 20px 20px;
+  padding-top: 45px;
 }
 
 .philosophy-content {
-  height: 70vw;
+  height: 60vh;
+  width: 80%;
+  margin: 20px auto;
+  border: 0;
+  border-radius: 0;
+  border: 3px solid yellow;
+  border-radius: 10px;
 }
 
 .philosophy-content h1 {
   width: 80%;
   font-size: 150%;
-  margin: 20px 75px; 
+  margin: 10px auto; 
 }
 
 
 .philosophy-content p {
-  font-size: 100%;
-  width: 70%;
-  margin: 20px 75px; 
+  font-size: 80%;
+  width: 80%;
+  margin: 10px auto;
 }
 
 philosophy-photo {
   height: 60vw;
+}
+
+.hero-video {
+  height: auto;
+  width: 80%;
+  border: 0;
+  border-radius: 0;
+  margin: 0 auto;
+  border: 3px solid yellow;
+  border-radius: 10px;
 }
 
 
@@ -1495,6 +1519,7 @@ skills-logo {
 }
 
 .project-content {
+
     width: 80%;
     height: auto;
 }
@@ -1558,32 +1583,68 @@ projects-header p {
 }
 
 .ibm-project-background {
-  height: 50vw;
+  height: 40vw;
   background-image: url('./img/ibm-logo.png');
 }
 
 .amplifon-project-background {
-  height: 30vw;
+  height: 40vw;
   background-image: url('./img/Amplifon.jpg');
 }
 
 .ora-project-background {
-  height: 60vw;
+  height: 40vw;
   background-image: url('./img/ora-image.png');
 }
 
 .digital-boite-project-background {
-  height: 60vw;
+  height: 40vw;
   background-image: url('./img/digital-boite-content-2.jpeg');
 }
 
 .illy-project-background {
-  height: 65vw;
+  height: 40vw;
   background-image: url('./img/Logo_Illy.svg.png');
 }
 
+.popup-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 5px 12px;
+  font-size: 30px;
+  opacity: 0;
+  transform: translate(60%,200%);
+  transition: transform 0.6s ease-in-out;
+  text-decoration: none;
+}
 
+.project-content:not(:hover) .popup-button {
+  display: block;
+  opacity: 1;
+  transform: translate(0%,0%);
+  transition: transform 0.6s ease-in-out;
+}
 
+.project-content:hover .popup-button {
+  display: block;
+  opacity: 1;
+  transform: translate(0%,0%);
+  transition: transform 0s ease-in-out;
+}
+
+.project-content:hover h2 {
+  transition: transform 0s ease-in-out;
+}
+
+.digital-boite-button {
+  color: #555;
+}
+
+.ibm-button {
+  color: #555;
+}
 
 .hide {
   height: 0;
@@ -1597,14 +1658,14 @@ projects-header p {
 }
 
 .instagram-content h1 {
-  font-size: 300%;
+  font-size: 250%;
   font-weight: bolder;
 }
 
 
 .instagram-content p {
   font-weight: bold;
-  font-size: 120%;
+  font-size: 90%;
 }
 
 instagram-photo {
